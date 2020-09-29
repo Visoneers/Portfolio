@@ -1,74 +1,68 @@
+@import url('../css/font.css');
 html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100vh;
       font-family: "Helvetica";
+      background-color: whitesmoke;
 }
 section{
       display: block;
-      width: 90vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
 }
-
 a{
       text-decoration: none;
       color: black;
   }
   
-  /*-------------------Navigation Menu --------------------------------*/
-  
-.navigation{
-      font-size: 1.7rem;
-      padding: 1.3rem 6rem;
-      height: 0rem;
-      min-height: 40vh;
-      overflow: hidden;
-}
-.navigation .heading{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-}
-.navigation .nav-menu{
-      margin: 0;
-      display: flex;
-      list-style-type: none;
-}
-.navigation .nav-menu a{
-      padding: 0 1.5rem;
-      font-size: 1.1rem;
-      position: relative;
-}
-
   /*-------------------Project Menu --------------------------------*/
 
 .project h1{
       font-size: 5rem;
+      font-family: "Demure";
 }
 .project p{
-      font: "Helvetica";
-      font-size: 2rem;
+      font-size: 5rem;
+      font-family: "Demure";
 }
 
-/*-------------------Dropdown Navigation Menu --------------------------------*/
+/*-------------------Navigation Menu --------------------------------*/
 
+.heading{
+      display: block;
+      position: fixed;
+      padding: 1.2rem 9rem;
+      font-family: "Demure";
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      overflow: hidden;
+      margin-block-end: 0em;
+      font-weight: bolder;
+}
+.heading p{
+      font-size: 0.6rem;
+      font-weight: bold;
+      letter-spacing: 5px;
+      margin-block-start: 0.2em;
+}
 .hero-section h1{
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); 
+      font-size: 75px;
       font-weight: lighter;
-      text-align: center;
+      font-family: "GreatestShow";
 }
-
-.menu-btn {
+.menu-btn{
       position: fixed;
-      margin: 1em;
+      z-index: 1;
+      margin: 1.1em;
       font-size: 24px;
 }
-
-.menu {
+.menu{
       position: absolute;
       top: 0;
       width: 100%;
