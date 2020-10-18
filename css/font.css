@@ -10,3 +10,7 @@
     font-family: Demure;
     src: url('../font/Demure.ttf');
 }
+@font-face {
+    font-family: Abel;
+    src: url('../font/Abel-Regular.ttf');
+}

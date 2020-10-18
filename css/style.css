@@ -12,40 +12,103 @@ section{
       width: 100%;
       height: 100%;
 }
+h1{
+      margin-block-start: 0.3em;
+      margin-block-end: 0.3em;
+}
 a{
       text-decoration: none;
       color: black;
-  }
+}
   
   /*-------------------Project Menu --------------------------------*/
 
-.project h1{
-      font-size: 5rem;
-      font-family: "Demure";
+.gradient-text{
+      background: linear-gradient(264.51deg, #FFE580 4.38%, #FF7571 11.51%, #FF7270 25.06%, #EA5DAD 36.04%, #C2A0FD 47.63%, #9867F0 59.03%, #3BF0E4 69.96%, #33CE43 83.74%, #B2F4B6 95.62%);
+      background-position: 58% 50%;
+      background-size: 500%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-animation: gradient-shift 20s ease infinite;
+      animation: gradient-shift 30s ease infinite;
+      -webkit-text-fill-color: transparent;
 }
-.project p{
-      font-size: 5rem;
-      font-family: "Demure";
+.wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 500px);
+      grid-template-areas: 
+      "box1 box1"
+      "box2 .";
+      padding-left: 5rem;
+      padding-right: 5rem;
+      grid-gap: 30px;
 }
-
+.box{
+      display: block;
+      position: relative;
+      font-size: 2.2rem;
+      box-sizing: border-box;
+      border-radius: 25px;
+      padding: 1.2rem;
+}
+.element{
+      padding: 1rem;
+      max-width: 800px;
+}
+.element h3{
+      font-size: 1rem;
+      font-weight: lighter;
+      margin-block-end: 0em;
+      font-family: "Abel";
+      color: grey;
+}
+.element p{
+      color: grey;
+      font-size: 1.2rem;
+      margin-block-start: 0em;
+}
+.project{
+      grid-area: box1;
+      background: #121212;
+}
+.project1{
+      grid-area: box2;
+      background-color: #121212;
+}
+@keyframes gradient-shift{
+      0% {
+            background-position: 58% 50%;
+        }
+        25% {
+            background-position: 100% 0%;
+        }
+        75% {
+            background-position: 10% 50%;
+        }
+        100% {
+            background-position: 58% 50%;
+        }
+}
 /*-------------------Navigation Menu --------------------------------*/
 
 .heading{
       display: block;
       position: fixed;
       padding: 1.2rem 9rem;
-      font-family: "Demure";
+      font-family: "Abel";
       font-size: 1.2rem;
       letter-spacing: 3px;
       overflow: hidden;
       margin-block-end: 0em;
-      font-weight: bolder;
+      font-weight: normal;
 }
 .heading p{
       font-size: 0.6rem;
-      font-weight: bold;
-      letter-spacing: 5px;
-      margin-block-start: 0.2em;
+      font-weight: lighter;
+      letter-spacing: 3.5px;
+      margin-block-start: 0em;
+      color: grey;
 }
 .hero-section h1{
       position: absolute;
@@ -53,7 +116,7 @@ a{
       left: 50%;
       transform: translate(-50%, -50%); 
       font-size: 75px;
-      font-weight: lighter;
+      font-weight: 500 !important;
       font-family: "GreatestShow";
 }
 .menu-btn{
@@ -146,6 +209,10 @@ a ion-icon {
       font-weight: lighter;
       padding-right: 16px;
 }
+
+
+
+
 
 @media(max-width: 768px) {
       h1 {
