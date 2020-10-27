@@ -183,13 +183,16 @@ a{
             grid-gap: 10px;
       }
 }
-@media(max-width: 768px) {
+@media(max-width: 425px) {
+      .heading{
+            justify-content: center;
+      }
       .grid-layout{
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 300px);
             justify-items: center;
             padding-left: 1rem;
             padding-right: 1rem;
-            grid-gap: 10px;
+            grid-row-gap: 10px;
       }
 }
