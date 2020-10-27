@@ -5,21 +5,17 @@ html, body {
       width: 100%;
       height: 100vh;
       font-family: "Helvetica";
-      background-color: whitesmoke;
+      background-color: #f5f5f5 !important;
 }
 section{
       display: block;
       width: 100%;
       height: 100%;
 }
-h1{
-      margin-block-start: 0.3em;
-      margin-block-end: 0.3em;
-}
 a{
       text-decoration: none;
-      color: black;
-}
+      color: #000000;
+}     
   
   /*-------------------Project Menu --------------------------------*/
 
@@ -33,7 +29,7 @@ a{
       animation: gradient-shift 30s ease infinite;
       -webkit-text-fill-color: transparent;
 }
-.wrapper{
+.grid-layout{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 500px);
@@ -92,6 +88,12 @@ a{
 }
 /*-------------------Navigation Menu --------------------------------*/
 
+
+/* <-----------------hero-section------------------> */
+.wrapper{
+      width: 100%;
+      height: 100vh;
+}
 .heading{
       display: block;
       position: fixed;
@@ -108,122 +110,86 @@ a{
       font-weight: lighter;
       letter-spacing: 3.5px;
       margin-block-start: 0em;
-      color: grey;
+      color: #000000;
 }
-.hero-section h1{
+.header h1{
+      text-align: center;
+      font-family: "Roboto-extralight";
+      font-size: 2.5rem;
+      font-weight: 100 !important;
+}
+.line{
       position: absolute;
-      top: 45%;
+      width: 24em;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); 
-      font-size: 75px;
-      font-weight: 500 !important;
-      font-family: "GreatestShow";
+      margin: auto;
+      border-right: 2px solid #000000;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translate(-50%,-50%);
 }
-.menu-btn{
-      position: fixed;
-      z-index: 1;
-      margin: 1.1em;
-      font-size: 24px;
+.anim-typewriter{
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCussor 500ms steps(40) infinite normal;
 }
-.menu{
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      background: #121212;
-      opacity: 0;
+@keyframes typewriter{
+      from{
+            width: 0;
+      }
+      to{
+            width: 14em;
+      }
 }
-
-.close-menu {
-      position: fixed;
-      margin: 1em;
-      font-size: 24px;
-      color: #fff;
-      z-index: 1;
+@keyframes blinkTextCussor {
+      from {
+            border-right-color: #000000;
+      }
+      to {
+            border-right-color: transparent;
+      }
 }
-
-.nav {
-      position: absolute;
-      left: 21%;
-      margin-top: 8%;
-}
-
-.nav ul {
-      list-style: none;
-}
-.main-menu-item {
-      padding-top: 30px;
-}
-
-.main-menu-item a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: #fff;
-      font-weight: lighter;
-}
-
-.submenu-item a {
-      color: grey;
-}
-
-.submenu li {
-      margin: 20px 0;
-}
-
-a ion-icon {
-      position: relative;
-      font-size: 9px;
-      opacity: 0.4;
-}
-
-.submenu {
-      display: none;
-}
-
-.contact {
-      color: #fff;
-      position: absolute;
-      bottom: 70px;
-      right: 24%;
-}
-
-.contact p {
-      font-weight: lighter;
-      color: grey;
-      font-family: "Helvetica";
-}
-
-.media {
-      position: absolute;
-      bottom: 70px;
-      left: 22%;
-}
-
-.media ul {
-      list-style: none;
-}
-
-.media ul li {
-      display: inline-block;
-      color: grey;
-      font-weight: lighter;
-      padding-right: 16px;
-}
-
-
-
-
 
 @media(max-width: 768px) {
-      h1 {
-            font-size: 20px;
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 17em;
+            }
       }
-
-      .nav {
+      .heading{
+            justify-content: center;
+      }
+      .header h1 {
+            font-size: 26px;
+      }
+      .nav{
             margin-top: 20%;
       }
-
-      .contact {
+      .contact{
             display: none;
+      }
+      .element h1{
+            font-size: 26px;
+      }
+      .grid-layout{
+            grid-template-rows: repeat(3, 300px);
+            justify-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            grid-gap: 10px;
+      }
+}
+@media(max-width: 768px) {
+      .grid-layout{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 300px);
+            justify-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            grid-gap: 10px;
       }
 }

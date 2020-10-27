@@ -14,3 +14,11 @@
     font-family: Abel;
     src: url('../font/Abel-Regular.ttf');
 }
+@font-face {
+    font-family: Roboto-normal;
+    src: url('../font/RobotoMono-normal.ttf');
+}
+@font-face {
+    font-family: Roboto-extralight;
+    src: url('../font/RobotoMono-thin.ttf');
+}
