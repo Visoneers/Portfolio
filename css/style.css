@@ -114,7 +114,7 @@ a{
 }
 .header h1{
       text-align: center;
-      font-family: "Roboto-extralight";
+      font-family: "Roboto-thin";
       font-size: 2.5rem;
       font-weight: 100 !important;
 }
@@ -157,10 +157,10 @@ a{
                   width: 0;
             }
             to {
-                  width: 17em;
+                  width: 14em;
             }
       }
-      .heading{
+      .heading h1, .heading p{
             justify-content: center;
       }
       .header h1 {
@@ -183,13 +183,13 @@ a{
             grid-gap: 10px;
       }
 }
-@media(max-width: 425px) {
-      .heading{
-            justify-content: center;
-      }
+@media(max-width: 426px) {
       .grid-layout{
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 300px);
+            grid-template-areas: 
+            "box1"
+            "box2";
             justify-items: center;
             padding-left: 1rem;
             padding-right: 1rem;

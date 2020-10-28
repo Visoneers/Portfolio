@@ -19,6 +19,6 @@
     src: url('../font/RobotoMono-normal.ttf');
 }
 @font-face {
-    font-family: Roboto-extralight;
-    src: url('../font/RobotoMono-thin.ttf');
+    font-family: Roboto-thin;
+    src: url('../font/RobotoMono-Thin.ttf');
 }
