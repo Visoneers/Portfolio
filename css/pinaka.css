@@ -1,0 +1,52 @@
+@import url('../css/font.css');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto-normal !important;
+    background-color: #f5f5f5 !important;
+}
+  
+.container{
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    align-items: center;
+}
+
+.row{
+    max-width: 1000px;
+    font-size: 1.5rem;
+}
+.row .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.row h1{
+    font-family: Roboto-normal;
+    font-weight: lighter;
+    letter-spacing: -2px;
+}
+.row p {
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+.col h6{
+    margin-block-start: 0em;
+}
+.wrapper{
+    width: 1000px;
+    height: 80vh;
+}
+.skills-area{
+    margin-top: 5%;
+    width: 32%;
+    float:left;
+    text-align: center;
+}
